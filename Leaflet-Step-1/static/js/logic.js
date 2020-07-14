@@ -13,7 +13,7 @@ function markerColor(magnitude) {
     if (magnitude <= 1) {
         return "#E6DCE9";
     } else if (magnitude <= 2) {
-        return "#85FFED";
+        return "#63ADF2";
     } else if (magnitude <= 3) {
         return "#66FFBF";
     } else if (magnitude <= 4) {
@@ -115,7 +115,7 @@ function createMap(earthquake) {
         var magnitudes = [0, 1, 2, 3, 4, 5];
         var colors = [
             "#E6DCE9",
-            "#85FFED",
+            "#63ADF2",
             "#66FFBF",
             "#3DFF57",
             "#F5F500",
