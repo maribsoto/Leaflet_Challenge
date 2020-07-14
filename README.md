@@ -1,6 +1,6 @@
 # Leaflet Challenge 
 
-![astronauts_space.jpg](Leaflet-Step-1/Images/1-logo.jpg)
+![1-logo.jpg](Leaflet-Step-1/Images/1-logo.jpg)
 
 ## Data Visualization using Leaflet
  
