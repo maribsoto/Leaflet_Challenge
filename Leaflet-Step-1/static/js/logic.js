@@ -6,7 +6,7 @@ var url = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.ge
 // Define markerSize ratio
 
 function markerSize(mag) {
-    return mag * 35000;
+    return mag * 3;
 }
 
 function markerColor(magnitude) {
@@ -124,8 +124,13 @@ function createMap(earthquake) {
 
         for (var i = 0; i < magnitudes.length; i++) {
             div.innerHTML +=
-                '<i style="background:' + colors[i] + '"></i> ' +
-                + magnitudes[i] + (magnitudes[i + 1] ? ' - ' + magnitudes[i + 1] + '<br>' : ' + ');
+            '<i style="background:' +
+            colors[i] +
+            '; color: ">' +
+            '[ ]' +
+            '</i> ' +
+            +magnitudes[i] +
+            (magnitudes[i + 1] ? ' - ' + magnitudes[i + 1] + '<br>' : ' + ');
         }
 
         return div;
