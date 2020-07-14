@@ -1,6 +1,6 @@
 # Leaflet Challenge 
 
-![1-logo.jpg](Leaflet-Step-1/Images/1-logo.jpg)
+![1-logo.png](Leaflet-Step-1/Images/1-logo.png)
 
 ## Data Visualization using Leaflet
  
