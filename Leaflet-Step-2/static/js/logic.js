@@ -139,13 +139,14 @@ function createMap(earthquake) {
 
         for (var i = 0; i < magnitudes.length; i++) {
             div.innerHTML +=
-            '<i style="background:' +
-            colors[i] +
-            '; color: ">' +
-            '[ ]' +
-            '</i> ' +
-            +magnitudes[i] +
-            (magnitudes[i + 1] ? ' - ' + magnitudes[i + 1] + '<br>' : ' + ');
+                '<i class="color-key" style="background:' +
+                colors[i] +
+                '; color: ">' +
+                '</i> ' +
+                +magnitudes[i] +
+                (magnitudes[i + 1]
+                    ? ' - ' + magnitudes[i + 1] + '<br>'
+                    : ' <i style="margin-left: 5px;">+</i> ');
         }
 
         return div;
